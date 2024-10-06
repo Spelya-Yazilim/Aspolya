@@ -21,8 +21,6 @@ const navToggleFunc = function () { nav.classList.toggle('active'); }
 navMenuBtn.addEventListener('click', navToggleFunc);
 navCloseBtn.addEventListener('click', navToggleFunc);
 
-
-
 // theme toggle variables
 const themeBtn = document.querySelectorAll('.theme-btn');
 themeToggleFunc()
@@ -66,3 +64,5 @@ for (let i = 0; i < themeBtn.length; i++) {
   
 
 }
+
+
