@@ -1,0 +1,56 @@
+
+
+/* Section Two START */
+
+#main{
+    background: var(--background-secondary);
+  width: 100%;
+  min-width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main #section-3{
+  width: 80%;
+  height: 90%;
+  background: var(--background-secondary);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+#main #section-3 .f-title{
+  color: var(--foreground-secondary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+
+#main #section-3 p{
+  color: var(--foreground-secondary)
+}
+
+#main #section-3 .s-title{
+  color: #fa9746;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+#main #section-3 .content > span{
+    color: var(--foreground-tertiary);
+} 
+/* Section Two FINISH */
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column-reverse; /* Kartı dikey düzende göster */
+  }
+
+
+}
+/* Responsive Design */
