@@ -3,21 +3,10 @@ import { staticData } from "./static.js";
 const messages = {
   en: {
    ...staticData.en,
-   content1:`  Birtat Meyhanesi, 1956 yılında Üsküdar'ın şirin mahallesi Selimiye'de İhsan Solmaz tarafından kurulmuştur. O dönemde, 
-        mahallenin sakin atmosferinde misafirlerine samimi ve sıcak bir ortam sunan bu küçük aile işletmesi, kısa sürede çevrede 
-        yaşayanlar ve diğer semtlerden gelen müşteriler tarafından çok sevilen bir mekan haline gelmiştir.`,
-  content2:`Konum olarak Selimiye Camii ile Selimiye Kışlası'nın hemen karşısında bulunan bu aile meyhanesi, yıllar boyunca bölgenin 
-        önemli simgelerinden biri haline gelmiştir. Ancak yasal düzenlemeler ve ruhsat değişiklikleri nedeniyle, Selimiye'deki 
-        orijinal mekanını 2003 yılı sonlarına doğru kapatmak zorunda kalmıştır. Birtat ailesi bu süreci Kadıköy'de ilk şubesini 
-        açarak atlatmış ve burada hizmet vermeye devam etmiştir. Kadıköy'ün canlı ve dinamik atmosferi, işletmeye yeni bir soluk 
-        getirmiştir.`,
-  content3:`Bugün itibariyle, Birtat Meyhanesi sadece Kadıköy'de değil, aynı zamanda Koşuyolu'ndaki şubesiyle de misafirlerine 
-        hizmet vermektedir. Geleneksel lezzetleri, nostaljik dokusu ve sıcak aile ortamıyla, kuşaklar boyunca müdavimlerin 
-        vazgeçilmezi olmuştur. Özellikle Selimiye'den bu yana değişmeyen aile bağları ve müşteri odaklı hizmet anlayışı, 
-        meyhanenin başarısının temel taşlarıdır`,
-  content4:` Birtat ailesi olarak, sadece lezzetli yemekler sunmayı değil, aynı zamanda misafirlerimize unutulmaz anılar yaşatmayı 
-        hedefliyoruz. Yıllardır süregelen misyonumuz, her gelen müşterimizi ailemizden biri gibi hissettirmek ve Selimiye'deki 
-        o nostaljik ortamı yeni nesillere de taşımaktır.`
+   content1:` Birtat Meyhanesi was founded in 1956 by İhsan Solmaz in the cute neighborhood of Selimiye in Üsküdar. At that time, this small family business, which offered its guests a friendly and warm atmosphere in the quiet atmosphere of the neighborhood, quickly became a place much loved by the people living in the area and customers from other neighborhoods.`,
+  content2:`Located right across from the Selimiye Mosque and Selimiye Barracks, this family tavern has become one of the important symbols of the region over the years. However, due to legal regulations and license changes, it was forced to close its original location in Selimiye towards the end of 2003. The Birtat family overcame this process by opening its first branch in Kadıköy and continued to provide service there. The lively and dynamic atmosphere of Kadıköy brought a new breath to the business.`,
+  content3:`As of today, Birtat Meyhanesi serves its guests not only in Kadıköy but also in Koşuyolu. With its traditional flavors, nostalgic texture and warm family atmosphere, it has become an indispensable place for generations of regulars. Especially the family ties that have not changed since Selimiye and the customer-oriented service approach are the cornerstones of the tavern's success.`,
+  content4:`As the Birtat family, we aim not only to serve delicious food, but also to create unforgettable memories for our guests. Our mission for years is to make every customer feel like a member of our family and to carry that nostalgic atmosphere in Selimiye to new generations.`
   },
   tr: {
     ...staticData.tr
