@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./assets/images/fix.jpg);
+  background-image: url(../../assets/images/fix.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +89,8 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./assets/images/ciger.jpg);
+  backdrop-filter: blur(50px);
+  background-image: url(../../assets/images/ciger.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
