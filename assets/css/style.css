@@ -13,7 +13,10 @@
 /*-----------------------------------*\ 
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .light-theme {
 
   /**
@@ -503,6 +506,8 @@ header .btn-group {
 .blog ion-icon { --ionicon-stroke-width: 50px; }
 
 .load-more {
+  transition: 300ms all;
+  font-weight: bold;
   margin-inline: auto;
   margin: auto; /* fallback for margin-inline */
   background: var(--foreground-secondary);
