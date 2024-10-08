@@ -1,7 +1,22 @@
 'use strict';
+const dropdownButton = document.getElementById('dropdownButton');
+const dropdownContent = document.getElementById('dropdownContent');
 
-// navbar variables
+dropdownButton.addEventListener('click', function () {
+    if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+    } else {
+        dropdownContent.style.display = 'block';
+    }
+});
 
+document.addEventListener('click', function (event) {
+
+    if (dropdownButton.contains(event.target) || dropdownContent.contains(event.target)) {
+        return;
+    }
+    dropdownContent.style.display = 'none';
+});
 if(localStorage.getItem('theme') == 'dark') {
   document.body.classList.add('dark-theme');
 }
@@ -26,9 +41,6 @@ const themeBtn = document.querySelectorAll('.theme-btn');
 themeToggleFunc()
 function themeToggleFunc() {
   for (let i = 0; i < themeBtn.length; i++) {
-
-    // When the `theme-btn` is clicked,
-    // it toggles classes between `light` & `dark` for all `theme-btn`.
     if(document.body.classList.contains('dark-theme')){
       themeBtn[i].classList.remove('light');
       themeBtn[i].classList.add('dark');

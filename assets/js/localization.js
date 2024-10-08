@@ -1,5 +1,16 @@
 export default function localization(messages) {
   const button = document.querySelectorAll('.lang_btn')
+  const tr = document.querySelector('.tr')
+  const en = document.querySelector('.en')
+  
+  tr.addEventListener('click', () => {
+    localStorage.setItem('lang', 'tr');
+    window.location.reload();
+  })
+  en.addEventListener('click', () => {
+    localStorage.setItem('lang', 'en');
+    window.location.reload();
+  })
   button.forEach(element => {
     element.addEventListener('click', () => {
       let lang = localStorage.getItem('lang');
