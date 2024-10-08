@@ -11,18 +11,12 @@ export const staticData = {
     mainpage:"Home",
     about:"About us",
     lang_btn:"EN/TR",
-    droped:`
-     <span class="en active">English</span>
-      <span href="#" class="tr">Turkish</span>
-    `
+
   },
   tr: {
     title:"Aspolya Tedavi",
     kateori:"Kategoriler",
-    droped:`
-   <span  class="tr active">Türkçe</span>
-<span  class="en">İngilizce</span>
-    `,
+  
     estetik:"Estetik",
     socialmedia:"Sosyal Medya",
     kurumsal:"Kurumsal",
