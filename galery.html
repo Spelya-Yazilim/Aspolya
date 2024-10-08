@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspolya Tedavi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logolnight.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+  <header>
+  </header>
+
+
+  <main>
+
+    <div class="header">
+      <h1>Bizim Galerimiz</h1>
+      <p>Bura ne yazacağımı bilemedim.</p>
+    </div>
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="/assets/images/anayemek.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images//fix.jpg" style="width:100%">
+        <img src="/assets/images/sarap.jpg" style="width:100%">
+        <img src="/assets/images/semizotu.jpg" style="width:100%">
+        <img src="/assets/images/salata.jpg" style="width:100%">
+        <img src="/assets/images/semizotu.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/assets/images/semizotu.jpg" style="width:100%">
+        <img src="/assets/images/salata.jpg" style="width:100%">
+        <img src="/assets/images/semizotu.jpg" style="width:100%">
+        <img src="/assets/images/marmara-view-restaurant.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images//fix.jpg" style="width:100%">
+      </div>  
+      <div class="column">
+        <img src="/assets/images/anayemek.jpg" style="width:100%">
+        <img src="/assets/images/anayemek.jpg" style="width:100%">
+        <img src="/assets/images/anayemek.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/w3images/nature.jpg" style="width:100%">
+        <img src="/w3images/mist.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/assets/images/anayemek.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images/marmara-view-restaurant.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images/ciger.jpg" style="width:100%">
+      </div>
+    </div>
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer></footer>
+
+  <!--
+    - #whatsap
+  -->
+
+
+  <div id="capitol-callback">
+    <div class="cpt-circle"></div>
+    <div class="cpt-circle-fill"></div>
+    <a href="https://api.whatsapp.com/send?phone=905385934759&text=Merhaba!" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
+      <img src="https://nhtagent.com/nht-upload/assets/javascripts/WhatsApp/WhatsApp.png" width="100%">
+    </a>
+  </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script type="module" src="./assets/messages/contact.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
