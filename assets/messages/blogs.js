@@ -18,9 +18,6 @@ const messages = {
     blog_text:'These are the summer fix menus that everyone is eagerly waiting for.' */
 
   },
-  tr: {
-    ...staticData.tr,
-  }
 }
 localization(messages)
 

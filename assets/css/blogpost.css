@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--background-primary);
+
 }
 
 #section-2 .overlay {

@@ -5,7 +5,7 @@ const messages = {
     ...staticData.en,
   },
   tr: {
-    ...staticData.tr,
+
   }
 }
 localization(messages)

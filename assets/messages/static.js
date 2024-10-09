@@ -6,9 +6,11 @@ export const staticData = {
     socialmedia:"Social Media",
     estetik:"Aesthetic",
     dis:"External",
+    faq:'Faq',
     hizmetlerimiz: "Services",
     contact_text:"Contact",
     mainpage:"Home",
+    galery:"Gallery",
     about:"About us",
     lang_btn:"EN/TR",
     droped:`
@@ -26,6 +28,7 @@ export const staticData = {
     estetik:"Estetik",
     socialmedia:"Sosyal Medya",
     kurumsal:"Kurumsal",
+    
     dis:"Diş",
     hizmetlerimiz: "Hizmetlerimiz",
     contact_text:"Iletisim",
