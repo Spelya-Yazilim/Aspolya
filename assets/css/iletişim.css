@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
   position: relative;
   width: 100%;
   height: 400px; /* Kutu yüksekliğini ihtiyacına göre ayarla */
-  background-image: url('../images//marmara-view-restaurant.jpg'); /* Resim yolu */
+
   background-size: cover; /* Resmin kutuyu tamamen kaplamasını sağlar */
   background-position: center; /* Resmi ortalar */
   background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
