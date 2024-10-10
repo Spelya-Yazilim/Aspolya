@@ -270,6 +270,7 @@ html {
 
 .btn {
   min-width: 10rem;
+  width: max-content;
   border-radius: 100px;
 }
 
@@ -490,6 +491,8 @@ main{
 
 
 
+
+
 .blog-card-group { 
   margin-bottom: 3rem;
 
@@ -579,12 +582,21 @@ main{
 }
 
 .blog ion-icon { --ionicon-stroke-width: 50px; }
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  
+}
 .load-more {
+  align-self: center;
   transition: 300ms all;
   font-weight: bold;
+  
   margin-inline: auto;
-  margin: auto; /* fallback for margin-inline */
+  margin: auto; 
+/* fallback for margin-inline */
   background: var(--foreground-secondary);
   color: var(--background-secondary);
   padding: 0.6875rem 1.1875rem;
@@ -1218,40 +1230,7 @@ footer .wrapper { text-align: center; }
    
   
 
-.main-button {
-    position: relative;
-    right: 1px;
-    top: 1px;
-    float: right;
-    width: 64px;
-    height: 64px;
-    background: center center no-repeat #189d0e;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .2);
-    background-size: 30px;
-    border-radius: 100%;
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    line-height: 58px;
-}
 
-.main-button i {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .6s cubic-bezier(.55, 0, .1, 1);
-    transition: all .6s cubic-bezier(.55, 0, .1, 1);
-    -webkit-transform: perspective(400px) rotateY(-180deg) scale(.4) translate3d(-50%, -50%, 0);
-    transform: perspective(400px) rotateY(-180deg) scale(.4) translate3d(-50%, -50%, 0);
-    z-index: 1;
-    width: 45%;
-    height: 45%;
-    font-size: 16px;
-}
-
-.main-button img {
-    vertical-align: middle;
-}
 
 
   /**
@@ -1369,7 +1348,40 @@ footer .wrapper { text-align: center; }
     50% {-webkit-transform: rotate(0) scale(1) skew(1deg);transform: rotate(0) scale(1) skew(1deg);opacity: .2}
     100% { -webkit-transform: rotate(0) scale(.6) skew(1deg);transform: rotate(0) scale(.6) skew(1deg);opacity: .2}
 }
+.main-button {
+  position: relative;
+  right: 1px;
+  top: 1px;
+  float: right;
+  width: 64px;
+  height: 64px;
+  background: center center no-repeat #189d0e;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .2);
+  background-size: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+}
 
+.main-button i {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s cubic-bezier(.55, 0, .1, 1);
+  transition: all .6s cubic-bezier(.55, 0, .1, 1);
+  -webkit-transform: perspective(400px) rotateY(-180deg) scale(.4) translate3d(-50%, -50%, 0);
+  transform: perspective(400px) rotateY(-180deg) scale(.4) translate3d(-50%, -50%, 0);
+  z-index: 1;
+  width: 45%;
+  height: 45%;
+  font-size: 16px;
+}
+
+.main-button img {
+  vertical-align: middle;
+}
 #capitol-callback {
     font-family: Arial;
     position: fixed;
