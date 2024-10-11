@@ -262,11 +262,11 @@ html {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container {
+/* .container {
   margin-inline: auto;
-  margin: auto; /* fallback for margin-inline */
+  margin: auto; 
   padding: 0 15px;
-}
+} */
 
 .btn {
   min-width: 10rem;
