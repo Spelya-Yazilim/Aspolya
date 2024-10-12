@@ -109,7 +109,10 @@ img, button { display: block; }
 a, span { display: inline-block; }
 
 
-
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 .dropdown {
   position: relative;
   z-index: 20;
@@ -1338,17 +1341,6 @@ footer .wrapper { text-align: center; }
 .main-button img {
   vertical-align: middle;
 }
-#capitol-callback {
-    font-family: Arial;
-    position: fixed;
-    width: 72px;
-    height: 72px;
-    bottom: 70px;
-    top: auto;
-    right: auto;
-    left: 40px;
-    z-index: 1;
-}
 
 .cpt-circle,
 .cpt-circle-fill {
@@ -1364,35 +1356,15 @@ footer .wrapper { text-align: center; }
 }
 
 .cpt-circle {
-    width: 250%;
-    height: 250%;
-    background-color: transparent;
-    border: 2px solid #189d0e;
     -webkit-animation: cptCircle 2.2s infinite ease-in-out;
     animation: cptCircle 2.2s infinite ease-in-out;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    left: -71%;
-    top: -75%;
 }
 
-.cpt-circle-fill {
-
-     left: -25%;
-    top: -28%; 
-}
 @media (min-width: 300px) {
   .cpt-circle-fill {
-    width: 155%;
-    height: 155%;
-    background-color: #189d0e;
-    border: 2px solid transparent;
     -webkit-animation: cptCircleFill 2.3s infinite ease-in-out;
     animation: cptCircleFill 2.3s infinite ease-in-out;
     box-shadow: 0 0 2px 0 #189d0e!important;
-    left: -30%;
-    top: -30%;
 }
 }
 .faq-answer p {

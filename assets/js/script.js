@@ -80,7 +80,12 @@ fetch('/assets/js/components/footer.html').then(response => response.text())
   .then(data => {
     document.querySelector('footer').innerHTML = data;
   });
-
+  fetch('/assets/js/components/whatsapp.html')
+  .then(response => response.text()) 
+  .then(data => {
+    document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+  })
+  .catch(error => console.error('Error:', error));
 
 if (localStorage.getItem('theme') == 'dark') {
   document.body.classList.add('dark-theme');
