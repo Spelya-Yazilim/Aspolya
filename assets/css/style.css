@@ -108,12 +108,7 @@ img, button { display: block; }
 
 a, span { display: inline-block; }
 
-button {
-  font: inherit;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
+
 
 .dropdown {
   position: relative;
