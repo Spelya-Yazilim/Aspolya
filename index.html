@@ -6,6 +6,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title class="title">Aspolya Tedavi</title>
 
@@ -29,7 +32,7 @@
 </head>
 
 <body>
-  <div class="try"></div>
+
 
   <!--
     - #HEADER
@@ -37,7 +40,7 @@
 
   <header></header>
   
-
+  
 
 
 
@@ -49,11 +52,11 @@
 
     <div class="hero w-full flex justify-center items-center">
 
-      <div class="container">
+      <div class="container ">
 
         <div class="left">
 
-          <h1 class="h1 hero_title">
+          <h1 class="h1 hero_title" data-aos="zoom-in">
             Merhabalar <br>
             <b>Aspolya &nbsp; Tedavi</b>'ye
             <br>Hoşgeldiniz.
@@ -67,7 +70,7 @@
 
         </div>
 
-        <div class="right">
+        <div class="right" data-aos="fade-up">
 
           <div class="pattern-bg"></div>
           <div class="img-box">
@@ -87,7 +90,7 @@
 
 
 
-    <div class="main w-full justify-center flex items-center">
+    <div class="main w-full  justify-center flex items-center">
 
       <div class="container ">
 
@@ -95,13 +98,13 @@
           - BLOG SECTION
         -->
 
-        <div class="blog">
+        <div class="blog"  >
 
-          <h2 class="h2 lastest_blog">Güncel Bloglar</h2>
+          <h2 class="h2 lastest_blog" data-aos="zoom-in">Güncel Bloglar</h2>
         
           <div class="blog-card-group [&>blog-card>blog-card-banner>img]:w-full">
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/fix.jpg" alt="Building microservices with Dropwizard, MongoDB & Docker"
@@ -146,7 +149,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/ciger.jpg" alt="Fast web page loading on a $20 feature phone" width="250"
@@ -188,7 +191,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/semizotu.jpg" alt="Accessibility Tips for Web Developers" width="250"
@@ -265,7 +268,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/sarap.jpg" alt="Dynamically Securing Databases using Hashicorp Vault"
@@ -353,7 +356,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/anayemek.jpg" alt="Monitoring Performance with the PageSpeed Insights API"
@@ -452,7 +455,7 @@
           - ASIDE
         -->
 
-        <div class="aside">
+        <div class="aside" data-aos="fade-up">
 
           <div>
 
@@ -520,7 +523,7 @@
 
           </div>
 
-          <div class="newsletter">
+          <div class="newsletter" data-aos="zoom-in">
 
             <h2 class="h2 subscribe">Abone Ol</h2>
 
@@ -573,7 +576,11 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+ 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!--
     - ionicon link
   -->

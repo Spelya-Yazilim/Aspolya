@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <script src="https://cdn.tailwindcss.com"></script>
+ 
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aspolya Tedavi</title>
@@ -11,7 +12,8 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logolnight.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/images/logolnight.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -27,7 +29,7 @@
     rel="stylesheet">
 </head>
 
-<body class="light-theme">
+<body >
 
   <!--
     - #HEADER
@@ -38,46 +40,46 @@
 
   <main>
 
-    <div class="">
-      <h1>Bizim Galerimiz</h1>
-      <p>Bura ne yazacağımı bilemedim.</p>
+    <div class="mygalery text-center py-10 ">
+      <h1 class="text-5xl font-bold">Bizim Galerimiz</h1>
+      <p class="text-xl">Bura ne yazacağımı bilemedim.</p>
     </div>
     
     <!-- Photo Grid -->
     <div class="row"> 
       <div class="column">
-        <img src="/assets/images/anayemek.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/assets/images//fix.jpg" style="width:100%">
-        <img src="/assets/images/sarap.jpg" style="width:100%">
-        <img src="/assets/images/semizotu.jpg" style="width:100%">
-        <img src="/assets/images/salata.jpg" style="width:100%">
-        <img src="/assets/images/semizotu.jpg" style="width:100%">
+        <img src="/assets/images/anayemek.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/assets/images//fix.jpg" data-aos="fade-up">
+        <img src="/assets/images/sarap.jpg" data-aos="fade-up" >
+        <img src="/assets/images/semizotu.jpg" data-aos="fade-up">
+        <img src="/assets/images/salata.jpg" data-aos="fade-up">
+        <img src="/assets/images/semizotu.jpg" data-aos="fade-up">
       </div>
       <div class="column">
-        <img src="/assets/images/semizotu.jpg" style="width:100%">
-        <img src="/assets/images/salata.jpg" style="width:100%">
-        <img src="/assets/images/semizotu.jpg" style="width:100%">
-        <img src="/assets/images/marmara-view-restaurant.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/assets/images//fix.jpg" style="width:100%">
+        <img src="/assets/images/semizotu.jpg" data-aos="fade-up">
+        <img src="/assets/images/salata.jpg"data-aos="fade-up">
+        <img src="/assets/images/semizotu.jpg" data-aos="fade-up">
+        <img src="/assets/images/marmara-view-restaurant.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/assets/images//fix.jpg" data-aos="fade-up">
       </div>  
       <div class="column">
-        <img src="/assets/images/anayemek.jpg" style="width:100%">
-        <img src="/assets/images/anayemek.jpg" style="width:100%">
-        <img src="/assets/images/anayemek.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/w3images/nature.jpg" style="width:100%">
-        <img src="/w3images/mist.jpg" style="width:100%">
-        <img src="/w3images/paris.jpg" style="width:100%">
+        <img src="/assets/images/anayemek.jpg" data-aos="fade-up">
+        <img src="/assets/images/anayemek.jpg" data-aos="fade-up">
+        <img src="/assets/images/anayemek.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/w3images/nature.jpg" data-aos="fade-up">
+        <img src="/w3images/mist.jpg" data-aos="fade-up">
+        <img src="/w3images/paris.jpg" data-aos="fade-up">
       </div>
       <div class="column">
-        <img src="/assets/images/anayemek.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/assets/images/marmara-view-restaurant.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
-        <img src="/assets/images/ciger.jpg" style="width:100%">
+        <img src="/assets/images/anayemek.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/assets/images/marmara-view-restaurant.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
+        <img src="/assets/images/ciger.jpg" data-aos="fade-up">
       </div>
     </div>
   </main>
@@ -99,11 +101,19 @@
   <!--
     - custom js link
   -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script type="module" src="./assets/messages/contact.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!--
-    - ionicon link
+    - ionicon 
+    
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

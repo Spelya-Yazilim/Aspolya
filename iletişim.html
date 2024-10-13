@@ -56,11 +56,11 @@
           <form style="width: 100%; display: flex; flex-direction: column; gap: 20px;">
               <div style="display: flex; gap: 20px;">
                   <div style="flex: 1;">
-                      <label for="name" style="font-size: 16px;">Name</label>
+                      <label class="name" for="name" style="font-size: 16px;">Adınız</label>
                       <input id="name" type="text" placeholder="Name" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
                   </div>
                   <div style="flex: 1;">
-                      <label for="surname" style="font-size: 16px;">Surname</label>
+                      <label for="surname" style="font-size: 16px;">Soyadınız</label>
                       <input id="surname" type="text" placeholder="Surname" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
                   </div>
               </div>
@@ -69,11 +69,13 @@
                   <input id="email" type="email" placeholder="Email" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
               </div>
               <div>
-                  <label for="message" style="font-size: 16px;">Message</label>
+                  <label class="message" for="message" style="font-size: 16px;">Mesajınız</label>
                   <textarea id="message" placeholder="Message" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; height: 150px;"></textarea>
               </div>
-              <button type="submit" style="padding: 10px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                  Send
+              <button type="submit" 
+              class="submit"
+              style="padding: 10px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  Gönder
               </button>
           </form>
       </div>

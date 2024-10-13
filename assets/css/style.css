@@ -113,6 +113,11 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
+
+.mygalery{
+  color: var(--foreground-secondary);
+}
+
 .dropdown {
   position: relative;
   z-index: 20;
@@ -1308,21 +1313,10 @@ footer .wrapper { text-align: center; }
     100% { -webkit-transform: rotate(0) scale(.6) skew(1deg);transform: rotate(0) scale(.6) skew(1deg);opacity: .2}
 }
 .main-button {
-  position: relative;
-  right: 1px;
-  top: 1px;
-  float: right;
-  width: 64px;
-  height: 64px;
+
   background: center center no-repeat #189d0e;
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .2);
   background-size: 30px;
-  border-radius: 100%;
-  cursor: pointer;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-  line-height: 58px;
 }
 
 .main-button i {
