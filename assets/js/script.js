@@ -67,7 +67,7 @@ for (let i = 0; i < themeBtn.length; i++) {
 
     /* Fonkiyon */
     themeToggleFunc()
-    window.location.reload();
+    
 
   })
 
