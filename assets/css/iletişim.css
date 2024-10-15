@@ -22,17 +22,21 @@ body::-webkit-scrollbar {
 .section {
   position: relative;
   width: 100%;
-  height: 400px; /* Kutu yüksekliğini ihtiyacına göre ayarla */
-  background-image: url("/assets/images/fix.jpg");
+   
+}
+#section-1{
   background-size: cover; /* Resmin kutuyu tamamen kaplamasını sağlar */
   background-position: center; /* Resmi ortalar */
   background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+  background-image: url("/assets/images/fix.jpg");
+  height: 400px; /* Kutu yüksekliğini ihtiyacına göre ayarla */
 }
 
 .inner-section {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%); /* Yazıyı tam ortalamak için */
   text-align: center;
   color: white; /* Yazı rengi ihtiyaca göre değiştirilebilir */
@@ -52,6 +56,7 @@ body::-webkit-scrollbar {
 
 /* İnner Texts */
 #section-1 .inner-section {
+
   text-align: center;
   color: #ffffff;
 
