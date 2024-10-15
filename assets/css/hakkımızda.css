@@ -5,15 +5,7 @@
 
 /* Hero */
 
-.hero{
-  background-color: #D6D7D9;
-  h1{
-    letter-spacing: 0.1px;
-    font-weight: bolder;
-    margin: 0;
-    padding: 0;
-  }
-}
+
 
 /* Services */
 .services{

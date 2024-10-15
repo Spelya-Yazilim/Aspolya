@@ -114,9 +114,7 @@ body{
   overflow-x: hidden;
 }
 
-.mygalery{
-  color: var(--foreground-secondary);
-}
+
 
 .dropdown {
   position: relative;
@@ -436,6 +434,9 @@ header .btn-group {
 /*-----------------------------------*\ 
   #HERO SECTION
 \*-----------------------------------*/
+
+
+
 
 .hero {
   background: var(--background-primary);
@@ -1371,4 +1372,11 @@ footer .wrapper { text-align: center; }
 /* Common */
 .text-primary{
   color: var(--foreground-primary);
+}
+
+.bg-primary{
+  background:var(--background-primary);
+}
+.bg-accent{
+  background:var(--accent);
 }
