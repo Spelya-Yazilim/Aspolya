@@ -41,7 +41,7 @@ header.insertAdjacentHTML(
           </li>
   
           <li>
-            <a href="/iletişim.html" class="nav-link contact_text">İletişim</a>
+            <a href="/iletisim.html" class="nav-link contact_text">İletişim</a>
           </li>
   
   
