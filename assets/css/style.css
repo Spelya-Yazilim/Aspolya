@@ -505,7 +505,6 @@ main{
   display: flex;
   align-items: center;
   justify-content:center ;
-  width: 100%;
   object-fit: fill;
   overflow: hidden;
   }
@@ -590,7 +589,16 @@ main{
 
 .load-more:hover { background: var(--accent); }
 
-
+.btn-accent{
+  background-color: var(--accent);
+  color: var(--background-secondary);
+  border: none;
+}
+.btn-accent:hover{
+  background-color: var(--foreground-secondary);
+  color: var(--background-secondary);
+  border: none;
+}
 
 
 
@@ -689,25 +697,10 @@ footer .wrapper { text-align: center; }
    * BLOG 
    */
 
-  .blog-card {
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    align-items: center;
-    gap: 20px;
-  }
+ 
 
-  .blog-card-banner {
-    display: block;
-    overflow: hidden;
-    border-radius: 5px;
-    max-height: 212px;
-  }
 
-  .blog-banner-img {
-    width:  100% ;
-    height: 100%;
-    object-fit: cover;
-  }
+
 
 }
 
