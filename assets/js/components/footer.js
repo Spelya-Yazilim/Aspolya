@@ -1,3 +1,6 @@
+const footer = document.querySelector("footer");
+footer.insertAdjacentHTML('beforeend',`
+
 <div class="w-full flex justify-center items-center ">
   <div class="container ">
     <div class="wrapper">
@@ -62,3 +65,5 @@
 <p class="copyright">
   &copy; Copyright 2024 <a href="#">Sprole </a>
 </p>
+
+  `)

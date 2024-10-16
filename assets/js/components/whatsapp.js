@@ -1,4 +1,6 @@
-<div class="fixed w-[72px] h-[72px] bottom-[0px] md:bottom-[40px] md:right-[40px] right-[0px] z-10">
+document.querySelector('body').insertAdjacentHTML('afterbegin', `
+  
+  <div class="fixed w-[72px] h-[72px] bottom-[0px] md:bottom-[40px] md:right-[40px] right-[0px] z-10">
   <div class="cpt-circle md:w-[250%] md:h-[250%] w-[150%] h-[150%] bg-transparent border-2 border-[#189d0e] origin-center md:top-[-75%] md:right-[-75%] right-[0%] top-[-50%]"></div>
   <div class="cpt-circle-fill bg-[#189d0e] border-transparent w-[155%] h-[155%] right-[-0%] top-[-50%]  border-2  md:right-[-25%] md:top-[-28%]"></div>
   <a href="https://api.whatsapp.com/send?phone=905385934759&text=Merhaba!" id="WhatsAppBtnDesktop" target="_blank"
@@ -6,3 +8,5 @@
     <img class="w-[100%]" src="https://nhtagent.com/nht-upload/assets/javascripts/WhatsApp/WhatsApp.png" width="100%">
   </a>
 </div>
+
+  `);
