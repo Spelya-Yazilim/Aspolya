@@ -96,7 +96,7 @@ header.insertAdjacentHTML(
             </li>
   
             <li class="nav-item">
-              <a href="iletişim.html" class="nav-link contact_text">İletişim</a>
+              <a href="iletisim.html" class="nav-link contact_text">İletişim</a>
             </li>
           </ul>
   

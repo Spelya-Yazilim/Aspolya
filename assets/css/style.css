@@ -692,6 +692,7 @@ footer .wrapper { text-align: center; }
   .blog-card {
     display: grid;
     grid-template-columns: 3fr 4fr;
+    align-items: center;
     gap: 20px;
   }
 
@@ -699,6 +700,7 @@ footer .wrapper { text-align: center; }
     display: block;
     overflow: hidden;
     border-radius: 5px;
+    max-height: 212px;
   }
 
   .blog-banner-img {
