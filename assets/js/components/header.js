@@ -141,30 +141,24 @@ document.addEventListener("DOMContentLoaded", function() {
   const dropdownContent = document.querySelector('.dropdown-content');
   const langSpans = document.querySelectorAll('.dropdown-content span');
 
-  // Dil ayarını localStorage'dan kontrol et
-  let activeLang = localStorage.getItem('lang') || 'tr'; // Varsayılan dil Türkçe
-
-  // Dil seçeneğini aktif yapma fonksiyonu
+  let activeLang = localStorage.getItem('lang') || 'tr'; 
   function setActiveLang(lang) {
     langSpans.forEach(span => {
       if (span.classList.contains(lang)) {
-        span.classList.add('active'); // Seçilen dile active sınıfı ekle
+        span.classList.add('active'); // 
       } else {
-        span.classList.remove('active'); // Diğer dillerde active sınıfını kaldır
+        span.classList.remove('active'); // 
       }
     });
   }
-
-  // Sayfa yüklenince aktif dili ayarla
   setActiveLang(activeLang);
 
-  // Dil seçimi yapılınca ilgili dili aktif hale getir ve localStorage'a kaydet
+  
   langSpans.forEach(span => {
     span.addEventListener('click', function() {
-      const selectedLang = this.classList.contains('tr') ? 'tr' : 'en'; // Hangi dilin seçildiğini kontrol et
-      localStorage.setItem('lang', selectedLang); // Seçilen dili localStorage'da sakla
-      setActiveLang(selectedLang); // Aktif dili güncelle
-      // İhtiyaç varsa sayfayı yenileme veya dil ile ilgili başka işlemler yapılabilir
+      const selectedLang = this.classList.contains('tr') ? 'tr' : 'en'; 
+      localStorage.setItem('lang', selectedLang);
+      setActiveLang(selectedLang);
     });
   });
 
