@@ -1,33 +1,23 @@
 export default function localization(messages) {
   const button = document.querySelectorAll('.lang_btn')
   let lang = localStorage.getItem('lang');
-  const tr = document.querySelector('.tr')
-  const en = document.querySelector('.en')
+  const tr = document.querySelectorAll('.tr')
+  const en = document.querySelectorAll('.en')
   console.log(tr,en)
-  tr.addEventListener('click', () => {
-    lang = 'tr';
-    localStorage.setItem('lang', lang);
-    window.location.reload();
-  })
-  en.addEventListener('click', () => {
-    lang = 'en';
-    localStorage.setItem('lang', lang);
-    window.location.reload();
-  })
-  button.forEach(element => {
+  tr.forEach(element => {
     element.addEventListener('click', () => {
-      
-      if(!lang || lang == 'tr') {
-        lang = 'en';
-        localStorage.setItem('lang', lang);
-      }
-      else{
-        lang = 'tr';
-        localStorage.setItem('lang', lang);
-      }
+      lang = 'tr';
+      localStorage.setItem('lang', lang);
       window.location.reload();
-    }) 
-  });
+    })
+  })
+  en.forEach(element => {
+    element.addEventListener('click', () => {
+      lang = 'en';
+      localStorage.setItem('lang', lang);
+      window.location.reload();
+    })
+  })
   if(!localStorage.getItem('lang')) {
     localStorage.setItem('lang', 'tr');
   }

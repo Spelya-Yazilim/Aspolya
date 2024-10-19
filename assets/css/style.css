@@ -297,7 +297,7 @@ html {
   color: var(--action-primary);
 }
 
-.dark-theme .load-more:hover { color: var(--white); }
+.dark-theme .load_more_text:hover { color: var(--white); }
 
 .dark-theme .aside .h2 { color: var(--foreground-primary); }
 
@@ -574,20 +574,14 @@ main{
 
   
 }
-.load-more {
-  align-self: center;
-  transition: 300ms all;
-  font-weight: bold;
-  
-  margin-inline: auto;
-  margin: auto; 
+.load_more_text {
 /* fallback for margin-inline */
   background: var(--foreground-secondary);
   color: var(--background-secondary);
   padding: 0.6875rem 1.1875rem;
 }
 
-.load-more:hover { background: var(--accent); }
+.load_more_text:hover { background: var(--accent); }
 
 .btn-accent{
   background-color: var(--accent);
