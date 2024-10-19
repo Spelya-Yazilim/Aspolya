@@ -30,7 +30,7 @@ const messages = {
     blog3_tag2:"#BreathingProblem", 
     blog3:"Breathing is Now Easier with Nose Aesthetics (Rhinoplasty)", 
     blog3_content:"Rhinoplasty is not only an aesthetic intervention, but also an effective solution that eliminates breathing problems.",
-    blog4_tag1:"##DentalImplant",
+    blog4_tag1:"#DentalImplant",
     blog4_tag2:"#MissingTooth", 
     blog4_tag3:"#OralHealth", 
     blog4:"Complete Your Missing Teeth with Dental Implants",

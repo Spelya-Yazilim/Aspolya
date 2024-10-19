@@ -3,36 +3,17 @@ import { staticData } from "./static.js";
 const messages = {
   en: {
     ...staticData.en,
-    blog_title:'Selimiye Birtat Summer Schedule Announced',
-    blog_content:`Adana kebab is a dish known all over the world for its unique flavor, named after the city of Adana in southern Turkey. Prepared with minced meat, spices and special methods, this kebab delights the palate with its rich aroma and visuality.
+    blog1_tag1:"#HairLoss",
+    blog1_tag3:"#HairTransplant",
+    blog1_tag2:"#PRPTreatment",
+    blog1:"The Most Effective Treatments Against Hair Loss",
+    blog1_content:`Hair loss is a common problem for both men and women, and can be caused by a variety of reasons, from genetic factors to stress, nutritional deficiencies and hormonal imbalances. Hair loss can affect an individual's appearance and self-confidence, which has led to the research of various treatment methods to solve this problem. Modern treatment methods such as PRP (Platelet Rich Plasma), hair transplantation and mesotherapy are among the effective solutions for strengthening hair follicles and stopping hair loss.
 
-History
-The origin of Adana kebab goes back to the depths of the kebab tradition. Adana cuisine, which was shaped by the combination of immigrants and locals, especially in the 19th century, paved the way for the emergence of this unique version of kebab. Traditionally, minced meat is skewered and cooked over a wood fire.
+PRP Treatment
+PRP is a treatment method performed by injecting platelet-rich plasma taken from the person's own blood into the scalp. Since platelets contain growth factors, they nourish and revitalize hair follicles. PRP treatment can be effective in the early stages of hair loss because it strengthens hair follicles and slows down hair loss. In addition, this method can be used as a supportive treatment after hair transplant operations.
 
-Ingredients
-One of the most distinctive features of Adana kebab is the quality of the ingredients used. For kebabs, which are usually made from lamb, the meat must contain at least 20% fat. This is a critical element that increases the flavor of the kebab. In addition, the following ingredients are also used:
-
-Minced lamb
-Red pepper
-Onion
-Cumin
-Salt
-Seasonings (optional)
-Preparation
-The way to make Adana kebab at home is quite enjoyable. Here is a simple recipe:
-
-Finely chop the lamb meat and fat or grind it in a meat grinder.
-Grate the onion and squeeze the water.
-Knead all the ingredients (meat, onion, spices) in a bowl.
-Thread the mixture you prepared onto skewers and shape them.
-Cook on a preheated grill or barbecue.
-Serving Suggestions
-Adana kebab is usually served with lavash bread and various appetizers. You can achieve a beautiful presentation with sumac onions, green peppers and tomatoes on the side. In addition, drinks such as ayran or turnip juice complement the taste of the kebab.
-
-Conclusion
-Adana kebab is not only a food, but also a culture and tradition. In every bite, you feel the history and hospitality of Adana. If you haven't tried it yet, I highly recommend you do!
-
-You can edit or improve this outline to your own style. Enjoy!`
+Hair Transplantation
+Hair transplantation is one of the most popular and permanent solutions for individuals experiencing permanent hair loss. It is usually done with two different techniques: "FUE" (Follicular Unit Extraction) and "FUT" (Follicular Unit Transplantation). In the FUE method, hair follicles are taken one by one from the donor area and placed in the required area. In the FUT method, hair follicles are removed as a strip and transferred to the area to be transplanted. Both methods provide a natural look to the hair and increase hair density.`,
   },
   tr: {
     
