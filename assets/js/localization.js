@@ -3,7 +3,9 @@ export default function localization(messages) {
   let lang = localStorage.getItem('lang');
   const tr = document.querySelectorAll('.tr')
   const en = document.querySelectorAll('.en')
-  console.log(tr,en)
+  const ar = document.querySelectorAll('.ar')
+
+  console.log(tr,en,ar)
   tr.forEach(element => {
     element.addEventListener('click', () => {
       lang = 'tr';
@@ -14,6 +16,13 @@ export default function localization(messages) {
   en.forEach(element => {
     element.addEventListener('click', () => {
       lang = 'en';
+      localStorage.setItem('lang', lang);
+      window.location.reload();
+    })
+  })
+  ar.forEach(element => {
+    element.addEventListener('click', () => {
+      lang = 'ar';
       localStorage.setItem('lang', lang);
       window.location.reload();
     })

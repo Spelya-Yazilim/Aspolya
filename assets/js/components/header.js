@@ -62,7 +62,8 @@ header.insertAdjacentHTML(
           </button>
           <div class="dropdown-content absolute rounded-2xl min-w-40 z-20 bg-white xl:left-[-500%] xl:top-[105%] 2xl:left-[-300%] 2xl:top-[155%]  shadow-lg" id="dropdownContent">
             <span class="tr">Türkçe</span>
-            <span class="en">İngilizce</a>
+            <span class="en">İngilizce</span>
+            <span class="ar">العربية</span>
           </div>
         </div>
   
@@ -126,7 +127,8 @@ header.insertAdjacentHTML(
           </button>
           <div class="dropdown-content absolute rounded-2xl min-w-40 z-20 bg-white xl:left-[-500%] xl:top-[105%] 2xl:left-[-300%] 2xl:top-[155%]  shadow-lg" id="dropdownContent">
             <span class="tr">Türkçe</span>
-            <span class="en">İngilizce</a>
+            <span class="en">İngilizce</span>
+            <span class="ar">العربية</span>
           </div>
         </div>
             </li>
@@ -171,8 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   langSpans.forEach(span => {
     span.addEventListener('click', function() {
-      
-      const selectedLang = this.classList.contains('tr') ? 'tr' : 'en'; 
+      const selectedLang = this.classList.contains('tr') ? 'tr' : this.classList.contains('en') ? 'en' : 'ar'; // Update to detect Arabic language
       localStorage.setItem('lang', selectedLang);
       setActiveLang(selectedLang);
     });

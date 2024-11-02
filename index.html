@@ -7,6 +7,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+   .slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider-item {
+  min-width: 100%; /* Mobil için tam genişlik */
+  scroll-snap-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .slider-item {
+    min-width: 50%; /* Tablet için iki kart göster */
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-item {
+    min-width: 33.33%; /* Masaüstü için üç kart göster */
+  }
+}
+  </style>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +64,7 @@
     rel="stylesheet">
 </head>
 
-<body class="light-theme">
+<body class="light-theme max-w-[1920px] mx-auto">
   <script  src="/assets/js/script.js"></script>
 
 
@@ -88,323 +121,255 @@
 
 
 
+    <div class=" w-full flex flex-col md:flex-row justify-center p-10 home-section-2">
 
-
-    <div class="main w-full  justify-center flex items-center">
-
-      <div class="container xl:px-10">
-
-        <!--
-          - BLOG SECTION
-        -->
-
-        <div class="blog"  >
-
-          <h2 class="h2 lastest_blog" data-aos="zoom-in">Güncel Haberler</h2>
-        
-          <div class="blog-card-group ">
-            <div class="blog-card  flex flex-col md:flex-row gap-5" data-aos="fade-up">
-              <div class="blog-card-banner basis-1/2 md:basis-1/3 flex-shrink-0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05l7eB7v-u2EbQyaxnaNgwJ-536ZnIhGxJw&s" alt="Saç Dökülmesine Karşı En Etkili Tedaviler" class="rounded-lg h-full object-cover w-full ">
-              </div>
-              <div class="blog-content-wrapper flex flex-col justify-between p-4">
-                <div class="flex flex-wrap gap-2">
-                  <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full blog1_tag1">#SaçDökülmesi</button>
-                  <button class="bg-green-500 text-white text-xs px-3 py-1 rounded-full blog1_tag2">#PRPTedavisi</button>
-                  <button class="bg-red-500 text-white text-xs px-3 py-1 rounded-full blog1_tag3">#SaçEkimi</button>
-                </div>
-                <h3 class="mt-4 text-lg font-semibold line-clamp-2">
-                  <a href="/blogs/sac-dökülmesine-karsı-en-etkili-tedaviler.html" class="h3 blog1 line-clamp-1">Saç Dökülmesine Karşı En Etkili Tedaviler</a>
-                </h3>
-                <p class="mt-2 text-gray-600 text-sm">
-                  <p class="line-clamp-2 blog1_content">    Saç dökülmesi hem erkekler hem de kadınlar için ciddi bir endişe kaynağı olabilir. PRP, saç ekimi ve mezoterapi gibi yöntemlerle saç kökleri güçlenebilir ve dökülme durdurulabilir.</p>
-              
-                </p>
-                <div class="wrapper-flex mt-3">
-            
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/logo.png" alt="Aspolya" width="50">
-                  </div>
-            
-                  <div class="wrapper">
-                    <a href="hakkımızda.html" class="h4">Aspolya</a>
-            
-                    <p class="text-sm">
-                      <time datetime="2024-07-27">27.07.2024</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                    </p>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <div class="blog-card flex flex-col md:flex-row gap-5" data-aos="fade-up">
-              <div class="blog-card-banner basis-1/2 md:basis-1/3 flex-shrink-0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bl1iWwQCQhwHPe2APpU8TnXp4E_S8qUdEA&s" alt="Diş Beyazlatma Yöntemleri: Hangisi Sizin İçin Uygun?" class="rounded-lg h-full object-cover w-full ">
-              </div>
-              <div class="blog-content-wrapper flex flex-col justify-between p-4">
-                <div class="flex flex-wrap gap-2">
-                  <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full blog2_tag1">#DişBeyazlatma</button>
-                  <button class="bg-green-500 text-white text-xs px-3 py-1 rounded-full blog2_tag2">#LazerleBeyazlatma</button>
-                  <button class="bg-red-500 text-white text-xs px-3 py-1 rounded-full blog2_tag3">#GülümsemeEstetiği</button>
-                </div>
-                <h3 class="mt-4 text-lg font-semibold line-clamp-2">
-                  <a href="/blogs/dis-beyazlatma-yöntemleri-hangisi-sizin-icin-uygun.html" class="h3 blog2 line-clamp-1"> Diş Beyazlatma Yöntemleri: Hangisi Sizin İçin Uygun?</a>
-                </h3>
-                <p class="mt-2 text-gray-600 text-sm ">
-                  <p class="line-clamp-2 blog2_content">
-                    Diş beyazlatma işlemleri lazer, beyazlatma kitleri ve profesyonel diş temizliği gibi farklı yöntemlerle yapılabilir. Hangi yöntemin size uygun olduğunu diş hekiminizle belirleyin.
-                  </p>
-               
-                </p>
-                <div class="wrapper-flex mt-3">
-            
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/logo.png" alt="Aspolya" width="50">
-                  </div>
-            
-                  <div class="wrapper">
-                    <a href="hakkımızda.html" class="h4">Aspolya</a>
-            
-                    <p class="text-sm">
-                      <time datetime="2024-07-27">27.07.2024</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                    </p>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-
-
-            <div class="blog-card flex flex-col md:flex-row gap-5" data-aos="fade-up">
-    <div class="blog-card-banner basis-1/2 md:basis-1/3 flex-shrink-0">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnSZp8chYqqw3KDCE2ChBXTxAu1KhDphjsA&s" alt="Burun Estetiği (Rinoplasti) ile Nefes Almak Artık Daha Kolay" class="rounded-lg h-full object-cover w-full ">
-    </div>
-    <div class="blog-content-wrapper flex flex-col justify-between p-4">
-      <div class="flex flex-wrap gap-2">
-        <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full blog3_tag1">#BurunEstetiği</button>
-        <button class="bg-red-500 text-white text-xs px-3 py-1 rounded-full blog3_tag2">#NefesAlmaSorunu</button>
-      </div>
-      <h3 class="mt-4 text-lg font-semibold line-clamp-2">
-        <a href="/blogs/burun-estetigi-ile-nefes-almak-artik-daha-kolay.html" class="h3 blog3">Burun Estetiği (Rinoplasti) ile Nefes Almak Artık Daha Kolay</a>
-      </h3>
-      <p class="mt-2 text-gray-600 text-sm ">
-        <p class="line-clamp-2 blog3_content">
-          Rinoplasti sadece estetik bir müdahale değil, aynı zamanda nefes alma sorunlarını ortadan kaldıran etkili bir çözüm sunar.
-        </p>
-    
-      </p>
-      <div class="wrapper-flex mt-3">
-            
-        <div class="profile-wrapper">
-          <img src="./assets/images/logo.png" alt="Aspolya" width="50">
-        </div>
-  
-        <div class="wrapper">
-          <a href="hakkımızda.html" class="h4">Aspolya</a>
-  
-          <p class="text-sm">
-            <time datetime="2024-07-27">27.07.2024</time>
-            <span class="separator"></span>
-            <ion-icon name="time-outline"></ion-icon>
-          </p>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-  <div class="blog-card flex flex-col md:flex-row gap-5" data-aos="fade-up">
-    <div class="blog-card-banner basis-1/2 md:basis-1/3 flex-shrink-0">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ55mMgL7TiRIsZJMQEGCfEsQQz09-YgjB-sw&s" alt="Diş İmplantları ile Eksik Dişlerinizi Tamamlayın" class="rounded-lg h-full object-cover w-full ">
-    </div>
-    <div class="blog-content-wrapper flex flex-col justify-between p-4">
-      <div class="flex flex-wrap gap-2">
-        <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full blog4_tag1">#Dişİmplantı</button>
-        <button class="bg-green-500 text-white text-xs px-3 py-1 rounded-full blog4_tag2">#EksikDiş</button>
-        <button class="bg-red-500 text-white text-xs px-3 py-1 rounded-full blog4_tag3">#AğızSağlığı</button>
-      </div>
-      <h3 class="mt-4 text-lg font-semibold line-clamp-2">
-        <a href="/blogs/dis-implantleri-ile-eksik-dislerinizi-tamamlayin.html" class="h3 blog4">Diş İmplantları ile Eksik Dişlerinizi Tamamlayın</a>
-      </h3>
-      <p class="mt-2 text-gray-600 text-sm 2">
-        <p class="line-clamp-2">  Diş implantları, eksik dişlerinizi tamamlayarak doğal görünüm ve fonksiyon kazandırır, ağız sağlığınızı iyileştirir.</p>
-      
-      </p>
-      <div class="wrapper-flex mt-3">
-            
-        <div class="profile-wrapper">
-          <img src="./assets/images/logo.png" alt="Aspolya" width="50">
-        </div>
-  
-        <div class="wrapper">
-          <a href="hakkımızda.html" class="h4">Aspolya</a>
-  
-          <p class="text-sm">
-            <time datetime="2024-07-27">27.07.2024</time>
-            <span class="separator"></span>
-            <ion-icon name="time-outline"></ion-icon>
-          </p>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-  <div class="blog-card flex flex-col md:flex-row gap-5" data-aos="fade-up">
-    <div class="blog-card-banner basis-1/2 md:basis-1/3 flex-shrink-0">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfVlFfmveG6arEMoHLGZWwctECWUwwddAfg&s" alt="Lazer Epilasyonun Avantajları ve Dezavantajları" class="rounded-lg h-full object-cover w-full ">
-    </div>
-    <div class="blog-content-wrapper flex flex-col justify-between p-4">
-      <div class="flex flex-wrap gap-2">
-        <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full blog5_tag1">#SaçKıran</button>
-        <button class="bg-green-500 text-white text-xs px-3 py-1 rounded-full  blog5_tag2">#Kırıcı</button>
-        <button class="bg-red-500 text-white text-xs px-3 py-1 rounded-full  blog5_tag3">#KıranSaç</button>
-      </div>
-      <h3 class="mt-4 text-lg font-semibold line-clamp-2">
-        <a href="/blogs/sac-kıran-nedir-ve-tedavi-yonntemleri-nelerdir.html" class="h3 blog5 line-clamp-1">Saç Kıran Nedir ve Tedavi Yöntemleri Nelerdir?</a>
-      </h3>
-      <p class="mt-2 text-gray-600 text-sm ">
-      <p class="line-clamp-2 blog5_contetn">  Saç kıran, stres, bağışıklık sistemi sorunları ya da genetik faktörler nedeniyle ortaya çıkabilen bir saç dökülme türüdür. Bu rahatsızlıkta, saçlı derinin belirli bölgelerinde aniden yuvarlak ve dairesel alanlarda saç kaybı yaşanır. Tedavisi, genellikle topikal ilaçlar, kortizon enjeksiyonları ya da PRP tedavisi gibi yöntemlerle yapılır.</p>
-      </p>
-      
-      <div class="wrapper-flex mt-3">
-            
-        <div class="profile-wrapper">
-          <img src="./assets/images/logo.png" alt="Aspolya" width="50">
-        </div>
-  
-        <div class="wrapper">
-          <a href="hakkımızda.html" class="h4">Aspolya</a>
-  
-          <p class="text-sm">
-            <time datetime="2024-07-27">27.07.2024</time>
-            <span class="separator"></span>
-            <ion-icon name="time-outline"></ion-icon>
-          </p>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-
-
-
-          
-
-     
-
-
-
+      <div class="flex flex-col w-full md:w-[35%] items-center md:-start  ">
+          <div class="py-5">
+            <h1 class="font-bold text-4xl yirmisekiz_yillik_deneyim" data-aos="fade-right"> 28 YILLIK DENEYIM</h1>
           </div>
-          <a href="/blogs/" class="load">
-            <button class="btn load_more_text self-center duration-300 font-bold m-auto">Devam</button>
-          </a>
 
-        </div>
-
-
-
-
-
-        <!--
-          - ASIDE
-        -->
-
-        <div class="aside" data-aos="fade-up">
-
+          <div class="py-5">
+            <p class="font-base ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore libero, atque hic nesciunt nemo tempore praesentium dolorem ipsam saepe laboriosam alias exercitationem dolor ab mollitia modi autem quaerat? Deleniti, voluptate?</p>
+          </div> 
           <div>
-
-            <h2 class="h2 hizmetlerimiz">Hizmetlerimiz</h2>
-
-            <a href="#" class="topic-btn">
-              <div class="icon-box">
-                <ion-icon name="restaurant"></ion-icon>
-              </div>
-
-              <p class="service1">Ocakbaşı</p>
-            </a>
-
-            <a href="#" class="topic-btn">
-              <div class="icon-box">
-                <ion-icon name="restaurant"></ion-icon>
-              </div>
-
-              <p class="service2">Çorbacı</p>
-            </a>
-
+            <p class="font-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus amet sit iste, vero numquam veniam exercitationem. Quaerat alias perferendis dignissimos commodi possimus saepe consequuntur officiis laborum architecto. Neque, esse? Illo, vel? Neque facilis molestiae delectus vel, qui modi. Nostrum, inventore qui. Molestiae odio vitae iure voluptatum! Aperiam, itaque? Corrupti ab repudiandae praesentium quibusdam, neque reprehenderit. Voluptate veritatis rerum aut omnis et odit provident a debitis sit! Maxime, culpa! Maiores error, aperiam in, quidem asperiores earum quasi obcaecati nulla quae placeat numquam aliquam esse eum ad odio reiciendis dolores. Doloremque?</p>
           </div>
+          <div class="flex items-center space-x-4 mt-10">
+            <!-- Hakkımızda butonu -->
+            <button class="px-4 py-1 border border-[#622674] text-gray-700 bg-transparent hover:bg-gray-100 rounded flex items-center space-x-2 rounded-full ">
+              <span class='hakkimizda'>Hakkımızda</span>
+              <!-- Ok ikonu -->
+               <div class="flex items-center justify-center w-7 h-7 bg-[#622674] rounded-full">
+                 <i class="fas fa-angle-right hover:text-gray-700 text-white"></i>
 
-          <br>
-
-          <div class="contact">
-
-
-            <h2 class="h2 contact_text">İletişim</h2>
-
-            <div class="wrapper">
-
-              <p class="contact_paragraf">
-                Aşşağıda Bulunan Kısa Yollardan Hızlı Bir Şekilde Aspolya İçin Rezervasyon Veya Sipariş Verebilirsiniz.
-              </p>
-
-              <ul class="social-link">
-
-                <li>
-                  <a href="#" class="icon-box discord">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="icon-box twitter">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="icon-box twitter">
-                    <ion-icon name="call"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="icon-box facebook">
-                    <ion-icon name="mail"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-
+               </div>
+            </button>
+            
+            <!-- Sosyal medya ikonları -->
+            <div class="flex space-x-4 text-gray-400 text-lg">
+              <a href="https://facebook.com" target="_blank" class="hover:text-blue-500">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="hover:text-blue-400">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="hover:text-blue-700">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
-
           </div>
+      </div>
 
-          <div class="newsletter" data-aos="zoom-in">
-
-            <h2 class="h2 subscribe">Abone Ol</h2>
-
-            <div class="wrapper">
-
-              <p class="subscribe_text">
-                Abone Olarak Güncel Haberlerden Anında Haber Alabilirsiniz.
-              </p>
-
-              <form action="#">
-                <input type="email" name="email" placeholder="Email Address" required>
-
-                <button type="submit" class="btn btn-primary subscribe">Abone Ol</button>
-              </form>
-
-            </div>
-
+      <div class="relative flex flex-col w-full md:w-[65%] justify-center items-center">
+        <!-- Alttaki resim -->
+         <div class="w-full md:w-[60%] h-[400px]  relative p-10 mt-10 mr-10">
+              <img src="./assets/images/sarap.jpg" alt="Bottom Image" class="w-[380px] h-[250px] absolute top-20 left-0 z-10 rounded-lg">
+          
+              <!-- Üstteki resim -->
+              <img src="./assets/images/marmara-view-restaurant.jpg" alt="Top Image" class="w-[500px] h-[300px] absolute top-0 left-10 z-20 rounded-lg">
           </div>
-
-        </div>
-
       </div>
 
     </div>
+
+    <div class="home-section-3  p-10">
+      <!-- Hizmetlerimiz Başlığı -->
+      <h2 class="text-4xl font-bold text-start mb-8 px-10 hizmetlerimiz">Hizmetlerimiz</h2>
+    
+      <!-- Kutuların Bulunduğu Alan -->
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+        <!-- Kutu 1 -->
+        <div class="relative bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/3 h-60">
+          <img src="./assets/images/ciger.jpg" alt="Hizmet 1" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start text-center p-4">
+            <p class="text-white text-xl font-semibold mb-2">Kısa Tanıtım Metni 1</p>
+            <a href="/hizmetlerimiz.html" class="text-white hover:text-blue-500 underline">Devamını Oku <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+    
+        <!-- Kutu 2 -->
+        <div class="relative bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/3 h-60">
+          <img src="./assets/images/sarap.jpg" alt="Hizmet 2" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start text-center p-4">
+            <p class="text-white text-xl font-semibold mb-2">Kısa Tanıtım Metni 2</p>
+            <a href="/hizmetlerimiz.html" class="text-white hover:text-blue-500 underline">Devamını Oku <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+    
+        <!-- Kutu 3 -->
+        <div class="relative bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/3 h-60">
+          <img src="./assets/images/marmara-view-restaurant.jpg" alt="Hizmet 3" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start text-center p-4">
+            <p class="text-white text-xl font-semibold mb-2">Kısa Tanıtım Metni 3</p>
+            <a href="/hizmetlerimiz.html" class="text-white hover:text-blue-500 underline">Devamını Oku <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-section-4 p-10 relative overflow-hidden w-[90%] mx-auto">
+      <!-- Yorumlar Başlığı -->
+      <h2 class="text-4xl font-bold text-start mb-8 px-10 yorumlarimiz">Yorumlar</h2>
+    
+      <!-- Slider -->
+      <div class="slider-wrapper flex transition-transform duration-300 ease-out">
+        <!-- Dinamik Yorum Kartları -->
+        <div class="slider-item shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-yellow-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <p class="mb-2">"Hizmet mükemmeldi! Destek ekibi her soruma hızlıca yanıt verdi ve çok yardımcı oldular."</p>
+          <span class="font-semibold">Ali Veli</span>
+        </div>
+    
+        <div class="slider-item shadow-md rounded-lg p-6 flex flex-col items-center text-center ">
+          <svg class="w-12 h-12 text-yellow-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <p class="mb-2">"Ürünler kaliteli ve zamanında teslim edildi. Güvenle alışveriş yapabileceğiniz bir platform."</p>
+          <span class="font-semibold">Ayşe Yılmaz</span>
+        </div>
+    
+        <div class="slider-item shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-yellow-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <p class="mb-2">"Çok memnun kaldım. Güzel paketleme ve hızlı kargo. Kesinlikle tekrar tercih ederim."</p>
+          <span class="font-semibold">Mehmet Can</span>
+        </div>
+    
+        <div class="slider-item shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-yellow-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <p class="mb-2">"Müşteri hizmetleri gerçekten ilgili ve anlayışlı. Sorunumu hızlıca çözdüler."</p>
+          <span class="font-semibold">Cemre Kaya</span>
+        </div>
+    
+        <div class="slider-item shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-yellow-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <p class="mb-2">"Beklentilerimi fazlasıyla karşıladı. Güvenilir ve kaliteli hizmet. Teşekkürler!"</p>
+          <span class="font-semibold">Deniz Demir</span>
+        </div>
+      </div>
+    
+      <!-- Slider Kontrolleri -->
+      <button onclick="slidePrev()" class="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full">‹</button>
+      <button onclick="slideNext()" class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full">›</button>
+    </div>
+
+    <div class="home-section-5 p-10">
+      <main class="section main" id="section-2" style="display:flex; flex-direction:column; justify-content:center; align-items:center; width: 100%; padding: 0%; height: auto;">
+        <div class="blog">
+          <h6 class="text-4xl font-bold text-start mb-8 px-10 lastest_blog">Bloglarımız</h2>
+          <div class="blog-card-group flex flex-wrap justify-between gap-2">
+            
+            <!-- Blog Kartı 1 -->
+            <div class="blog-card w-full sm:w-[48%] lg:w-[30%] p-4 flex flex-col mx-auto rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-duration="1000">
+              <div class="blog-card-banner max-h-[300px]">
+                <img src="./assets/images/anayemek.jpg" alt="Blog Resmi" class="w-full object-cover h-[250px]"> <!-- h-[300px] eklendi -->
+              </div>
+              <div class="blog-content-wrapper p-4">
+                <button class="blog-topic text-tiny current">#Etiket1</button>
+                <h3 class="text-2xl mt-3">
+                  <a href="#" class="h3 no-underline">Blog Başlığı 1</a>
+                </h3>
+                <p class="mt-2 text-sm">Bu blog yazısı hakkında kısa bir açıklama burada yer alır.</p>
+                <div class="wrapper-flex flex items-center mt-4">
+                  <div class="profile-wrapper flex-shrink-0">
+                    <img src="https://via.placeholder.com/50" alt="Yazar Resmi" width="50" class="rounded-full">
+                  </div>
+                  <div class="wrapper ml-3">
+                    <a href="#" class="text-base font-bold no-underline">Yazar Adı</a>
+                    <p class="text-sm text-gray-500 mt-1"><time datetime="2024-07-27">27.07.2024</time></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Blog Kartı 2 -->
+            <div class="blog-card w-full sm:w-[48%] lg:w-[30%] p-4 flex flex-col mx-auto rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-duration="1000">
+              <div class="blog-card-banner max-h-[300px]">
+                <img src="./assets/images/marmara-view-restaurant.jpg" alt="Blog Resmi" class="w-full object-cover h-[250px]"> <!-- h-[300px] eklendi -->
+              </div>
+              <div class="blog-content-wrapper p-4">
+                <button class="blog-topic text-tiny current">#Etiket2</button>
+                <h3 class="text-2xl mt-3">
+                  <a href="#" class="h3 no-underline">Blog Başlığı 2</a>
+                </h3>
+                <p class="mt-2 text-sm">Bu blog yazısı hakkında kısa bir açıklama burada yer alır.</p>
+                <div class="wrapper-flex flex items-center mt-4">
+                  <div class="profile-wrapper flex-shrink-0">
+                    <img src="./assets/images/ciger.jpg" alt="Yazar Resmi" width="50" class="rounded-full">
+                  </div>
+                  <div class="wrapper ml-3">
+                    <a href="#" class="text-base font-bold no-underline">Yazar Adı</a>
+                    <p class="text-sm text-gray-500 mt-1"><time datetime="2024-07-27">27.07.2024</time></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Blog Kartı 3 -->
+            <div class="blog-card w-full sm:w-[48%] lg:w-[30%] p-4 flex flex-col mx-auto rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-duration="1000">
+              <div class="blog-card-banner max-h-[300px]">
+                <img src="./assets/images/semizotu.jpg" alt="Blog Resmi" class="w-full object-cover h-[250px]"> <!-- h-[300px] eklendi -->
+              </div>
+              <div class="blog-content-wrapper p-4">
+                <button class="blog-topic text-tiny current">#Etiket3</button>
+                <h3 class="text-2xl mt-3">
+                  <a href="#" class="h3 no-underline">Blog Başlığı 3</a>
+                </h3>
+                <p class="mt-2 text-sm">Bu blog yazısı hakkında kısa bir açıklama burada yer alır.</p>
+                <div class="wrapper-flex flex items-center mt-4">
+                  <div class="profile-wrapper flex-shrink-0">
+                    <img src="https://via.placeholder.com/50" alt="Yazar Resmi" width="50" class="rounded-full">
+                  </div>
+                  <div class="wrapper ml-3">
+                    <a href="#" class="text-base font-bold no-underline">Yazar Adı</a>
+                    <p class="text-sm text-gray-500 mt-1"><time datetime="2024-07-27">27.07.2024</time></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <div class="home-section-6 p-10 flex flex-col items-center">
+      <!-- Logo -->
+      <img src="./assets/images/logolight.png" alt="Logo" class="mb-4" />
+  
+      <!-- Mekat Trifi Metni -->
+      <h2 class="text-xl font-base mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, esse.
+
+      </h2>
+      <h2 class="text-  xl font-base mb-4">Sisli - Istanbul - Turkiye</h2>
+  
+      <!-- Haitaya Butonu -->
+       <a href="./iletisim.html">
+        <button class="bg-[#334367] text-white px-6 py-2 rounded transition duration-200 flex items-center">
+            
+          <i class="fas fa-map text-[#EECD7F]  "></i>
+           <p class="yoltarifi ml-2">
+            Yol Tarifi Al
+          </p>  
+        </button>
+    </a>
+  </div>
+    
+    
+    
+    
+
+    
 
   </main>
 
@@ -447,6 +412,43 @@
   <script type="module" src="./assets/messages/home.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    let currentIndex = 0;
+  
+    function itemsToShow() {
+  if (window.innerWidth < 768) {
+    return 1;
+  } else if (window.innerWidth < 1024) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
+  
+    function updateSlider() {
+      const sliderWrapper = document.querySelector('.slider-wrapper');
+      const itemWidth = 100 / itemsToShow();
+      sliderWrapper.style.transform = `translateX(-${currentIndex * itemWidth}%)`;
+    }
+  
+    function slideNext() {
+      const totalItems = document.querySelectorAll('.slider-item').length;
+      if (currentIndex < totalItems - itemsToShow()) currentIndex++;
+      updateSlider();
+    }
+  
+    function slidePrev() {
+      if (currentIndex > 0) currentIndex--;
+      updateSlider();
+    }
+  
+    window.addEventListener('resize', () => {
+      currentIndex = 0; // Ekran boyutu değiştiğinde en başa dön
+      updateSlider();
+    });
+  </script>
 </body>
 
 </html>
+
+

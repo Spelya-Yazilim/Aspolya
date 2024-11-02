@@ -603,8 +603,37 @@ main{
 .aside { display: none; }
 
 
+.home-section-2 .home-section-3 .home-section-4{
+  background: var(--background-primary);
+}
+
+.home-section-2  h2,h1,span,p{
+  color: var(--foreground-secondary)
+}
+
+.home-section-3 h2,h1,span,p{
+  color: var(--foreground-secondary)
+}
 
 
+.home-section-4 h2,h1,span,p{
+  color: var(--foreground-secondary)
+}
+
+.home-section-4 .box{
+  background: var(--background-primary);
+}
+
+.home-section-5 h6{
+  color: var(--foreground-secondary)
+}
+
+.home-section-6{
+  background: var(--background-primary);
+}
+.home-section-6 h2{
+  color: var(--foreground-secondary)
+}
 
 /*-----------------------------------*\ 
   #FOOTER
@@ -800,8 +829,8 @@ footer .wrapper { text-align: center; }
    */
 
   footer .container {
-    padding: var(--py) 30px;
-    grid-template-columns: 2fr 1fr 1fr;
+    padding: var(--py) 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   footer .wrapper { text-align: left; }

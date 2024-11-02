@@ -1,11 +1,3 @@
-
-import localization from "../js/localization.js";
-import { staticData } from "./static.js";
-document.querySelectorAll('.blog-card').forEach(element => {
-  element.addEventListener('click', () => {
-    window.location.href = '/blogs/selimiye-birtat-summer-schedule-announced.html';
-  })
-});
 const messages = {
   en: {
     ...staticData.en,
@@ -34,9 +26,33 @@ const messages = {
     blog5_tag3:"#KıranHair",
     blog5:"What is Alopecia Areata and What are the Treatment Methods?",
     blog5_content:"Alopecia areata is a type of hair loss that can occur due to stress, immune system problems or genetic factors. In this disorder, hair loss occurs suddenly in round and circular areas on certain areas of the scalp. Treatment is usually done with methods such as topical medications, cortisone injections or PRP treatment."
-   
-
+  },
+  ar: {
+    ...staticData.ar,
+    lastest_blog: 'أحدث الأخبار',
+    blog1_tag1:"#تساقط_الشعر",
+    blog1_tag2:"#علاج_PRP",
+    blog1_tag3:"#زراعة_الشعر",
+    blog1:"أكثر العلاجات فعالية ضد تساقط الشعر",
+    blog1_content:"يمكن أن يكون تساقط الشعر مصدر قلق خطير لكل من الرجال والنساء. يمكن تقوية بصيلات الشعر وإيقاف تساقط الشعر باستخدام طرق مثل PRP وزراعة الشعر والمعالجة الميزوثيرابي.",
+    blog2_tag1:"#تبييض_الأسنان",
+    blog2_tag2:"#تبييض_بالليزر",
+    blog2_tag3:"#جمال_الابتسامة",
+    blog2:"طرق تبييض الأسنان: أيهما مناسب لك؟",
+    blog2_content:"تبييض الأسنان هو وسيلة فعالة لإزالة تسوس الأسنان. كما أنه وسيلة جيدة للوقاية من سرطان الأسنان وأمراض اللثة.",
+    blog3_tag1:"#تجميل_الأنف",
+    blog3_tag2:"#مشكلة_التنفس",
+    blog3:"التنفس أصبح أسهل مع تجميل الأنف (تجميل الأنف)",
+    blog3_content:"تجميل الأنف ليس فقط تدخلاً جمالياً، بل هو أيضاً حل فعال يقضي على مشاكل التنفس.",
+    blog4_tag1:"#زراعة_الأسنان",
+    blog4_tag2:"#فقدان_الأسنان",
+    blog4_tag3:"#صحة_الفم",
+    blog4:"أكمل أسنانك المفقودة بزراعة الأسنان",
+    blog4_content:"توفر زراعة الأسنان مظهراً طبيعياً ووظائف مشابهة للأسنان الطبيعية عن طريق استكمال الأسنان المفقودة وتحسين صحة الفم.",
+    blog5_tag1:"#الثعلبة",
+    blog5_tag2:"#الثعلبة_البقعية",
+    blog5_tag3:"#KıranHair",
+    blog5:"ما هي الثعلبة وما هي طرق العلاج؟",
+    blog5_content:"الثعلبة هي نوع من تساقط الشعر الذي يمكن أن يحدث بسبب التوتر أو مشاكل الجهاز المناعي أو عوامل وراثية. يحدث تساقط الشعر بشكل مفاجئ في مناطق دائرية معينة على فروة الرأس. العلاج يتم عادةً بطرق مثل الأدوية الموضعية، حقن الكورتيزون أو علاج PRP."
   },
 }
-localization(messages)
-
