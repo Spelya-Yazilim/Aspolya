@@ -7,8 +7,9 @@ footer.insertAdjacentHTML('beforeend',`
         <img src="/assets/images/logolight.png" alt="SimpleBlog Logo" width="150" class="logo-light">
         <img src="/assets/images/logolnight.png" alt="SimpleBlog Logo" width="150" class="logo-dark">
       </a>
-      <h2 class="footer-title sosyalmedyadabiz">Sosyal Medyada Biz</h2>
+      <h2 class="footer-title socialmedia">Sosyal Medyada Biz</h2>
       <div class="flex space-x-4 text-gray-400 text-2xl pt-4 w-full justify-center md:justify-start">
+      
         <a href="https://facebook.com" target="_blank" class="hover:text-blue-500">
           <i class="fab fa-facebook-f"></i>
         </a>
