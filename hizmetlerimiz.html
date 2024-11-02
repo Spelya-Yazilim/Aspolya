@@ -29,8 +29,16 @@
   <style>
      html {
     scroll-behavior: smooth;
+    
   }
   
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
    
   </style>
 </head>
@@ -50,16 +58,16 @@
       <!-- Image with Overlay -->
       <div class="relative w-full h-full">
         <img src="./assets/images/hizmetlerimiz-banner.png" alt="Banner Image" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-white opacity-90"></div>
+        <div class="absolute inset-0  opacity-90 services-banner"></div>
       </div>
       
       <!-- Icon Boxes Wrapper -->
       <div class="absolute bottom-4 flex gap-4 mb-8 overflow-x-auto no-scrollbar w-full px-4 sm:justify-center md:w-auto">
-        <div class="flex-shrink-0 flex items-center justify-center w-48 h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2">👁️ Göz</div>
-        <div class="flex-shrink-0 flex items-center justify-center w-48 h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2">🧠 Kas</div>
-        <div class="flex-shrink-0 flex items-center justify-center w-48 h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2">💪 Kol</div>
-        <div class="flex-shrink-0 flex items-center justify-center w-48 h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2">👄 Ağız</div>
-        <div class="flex-shrink-0 flex items-center justify-center w-48 h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2">👂 Kulak</div>
+        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-48 md:h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2 ">👁️ Göz</div>
+        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-48 md:h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2 ">🧠 Kas</div>
+        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-48 md:h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2 ">💪 Kol</div>
+        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-48 md:h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2 ">👄 Ağız</div>
+        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-48 md:h-48 rounded-[20px] hover:opacity-50 transition-opacity duration-500 cursor-pointer bg-white shadow text-center font-bold opacity-70 mx-2 ">👂 Kulak</div>
       </div>
     
 
@@ -108,7 +116,6 @@
 
   <!-- Custom JavaScript -->
   <script src="/assets/js/script.js"></script>
-  <script type="module" src="/assets/messages/hizmetlerimiz.js"></script>
   <script type="module" src="/assets/messages/hizmetlerimiz.js"></script>
 
 

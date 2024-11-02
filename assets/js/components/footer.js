@@ -55,8 +55,8 @@ footer.insertAdjacentHTML('beforeend',`
         </div>
       </div>
 
-      <div class="flex items-center mb-2 w-[250px] py-4 px-8 rounded-lg hover:bg-gray-400 transition duration-300" id="emailButton">
-        <button class="flex items-center" onclick="copyEmail()">
+      <div class="flex items-center mb-2 w-[250px] py-4 px-8 rounded-lg hover:bg-gray-400 transition duration-300 footer-email" id="emailButton ">
+        <button class="flex items-center " onclick="copyEmail() ">
           <i class="fas fa-envelope mr-2"></i>
           <span class="text-sm mr-2 ">email@example.com</span>
         </button>

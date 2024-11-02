@@ -494,7 +494,22 @@ main{
   transition: 0.25s ease;
 }
 
+.blog-card-home {
+  background: var(--background-secondary);
+  color: var(--foreground-secondary);
+  padding: 10px;
+  margin-bottom: 2rem !important;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsla(0, 48%, 23%, 0.05);
+  transition: 0.25s ease;
+}
+
 .blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.blog-card-home:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
 }
@@ -629,7 +644,7 @@ main{
 }
 
 .home-section-6{
-  background: var(--background-primary);
+  background: var(--background-secondary);
 }
 .home-section-6 h2{
   color: var(--foreground-secondary)
@@ -1382,4 +1397,29 @@ footer .wrapper { text-align: center; }
 }
 .border-accent{
   border-color: var(--accent);
+}
+
+
+
+.yorum-card{
+
+    background: var(--background-primary);
+    color: var(--foreground-secondary);
+    padding: 10px;
+    margin-bottom: 2rem !important;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px hsla(0, 48%, 23%, 0.05);
+    transition: 0.25s ease;
+  
+}
+
+.services-banner{
+
+  background: var(--background-primary);
+}
+
+.footer-email{
+
+  background: var(--background-secondary);
+  color: var(--foreground-secondary);
 }

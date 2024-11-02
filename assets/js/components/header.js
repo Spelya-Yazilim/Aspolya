@@ -60,10 +60,19 @@ header.insertAdjacentHTML(
               </path>
             </svg>
           </button>
-          <div class="dropdown-content absolute rounded-2xl min-w-40 z-20 bg-white xl:left-[-500%] xl:top-[105%] 2xl:left-[-300%] 2xl:top-[155%]  shadow-lg" id="dropdownContent">
-            <span class="tr">Türkçe</span>
-            <span class="en">İngilizce</span>
-            <span class="ar">العربية</span>
+          <div class="dropdown-content absolute rounded-2xl min-w-[200px] z-20 bg-white xl:left-[-500%] xl:top-[105%] 2xl:left-[-300%] 2xl:top-[155%] shadow-lg" id="dropdownContent">
+            <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/turk-flag.png" alt="Türkçe Bayrağı" class="w-6 h-4 ml-1 mr-[-14px]" />
+              <span class="tr">Türkçe</span>
+            </div>
+            <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/abd-flag.png" alt="İngilizce Bayrağı" class="w-6 h-4 ml-1 mr-[-14px]" />
+              <span class="en">İngilizce</span>
+            </div>
+            <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/arap-flag.png" alt="Arapça Bayrağı" class="w-6 h-4 ml-1 mr-[-14px]" />
+              <span class="ar">العربية</span>
+            </div>
           </div>
         </div>
   
@@ -126,9 +135,18 @@ header.insertAdjacentHTML(
             </svg>
           </button>
           <div class="dropdown-content absolute rounded-2xl min-w-40 z-20 bg-white xl:left-[-500%] xl:top-[105%] 2xl:left-[-300%] 2xl:top-[155%]  shadow-lg" id="dropdownContent">
-            <span class="tr">Türkçe</span>
-            <span class="en">İngilizce</span>
-            <span class="ar">العربية</span>
+             <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/turk-flag.png" alt="Türkçe Bayrağı" class="w-6 h-4 ml-3 mr-[-14px]" />
+              <span class="tr">Türkçe</span>
+            </div>
+            <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/abd-flag.png" alt="İngilizce Bayrağı" class="w-6 h-4 ml-3 mr-[-14px]" />
+              <span class="en">İngilizce</span>
+            </div>
+            <div class="flex items-center gap-2 py-1">
+              <img src="/assets/images/arap-flag.png" alt="Arapça Bayrağı" class="w-6 h-4 ml-3 mr-[-14px]" />
+              <span class="ar">العربية</span>
+            </div>
           </div>
         </div>
             </li>

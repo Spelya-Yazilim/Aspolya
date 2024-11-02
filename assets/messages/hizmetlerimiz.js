@@ -1,7 +1,10 @@
 // assets/messages/hizmelerimiz.js
+import localization from "../js/localization.js";
+import { staticData } from "./static.js";
 
-const hizmelerimiz = {
+const messages = {
     en: {
+      ...staticData.en,
       title: "Our Services",
       description: "Sac ekimi",
       service1: "Hair Transplant",
@@ -12,6 +15,7 @@ const hizmelerimiz = {
       // Add more services as needed
     },
     ar: {
+      ...staticData.ar,
       title: "خدماتنا",
       description: "",
       service1: "زراعة الشعر",
@@ -22,6 +26,6 @@ const hizmelerimiz = {
       // Add more services as needed
     }
   };
-  
-  export default hizmelerimiz;
-  
+
+localization(messages);
+    
